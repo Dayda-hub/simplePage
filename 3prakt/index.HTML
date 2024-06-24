@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучение JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #92d4dd;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #000000;
+        }
+        header, section {
+            width: 80%;
+            margin: 20px 0;
+            background-color: rgba(0, 221, 129, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #00838f;
+            color: rgb(175, 64, 64);
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: rgb(211, 75, 75);
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в изучение JavaScript</h1>
+        <p>Ваш путь к изучению JavaScript начинается здесь.</p>
+        <button onclick="promptName()">Представьтесь</button>
+    </header>
+    <section id="introduction">
+        <h2>Что такое JavaScript?</h2>
+        <p>JavaScript — это язык программирования, который позволяет создавать интерактивные веб-страницы. Он используется для разработки динамического контента, игр, приложений и многого другого.</p>
+        <p>Изначально JavaScript был создан, чтобы «сделать веб-страницы живыми».</p>
+        <p>Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы.</p>
+        <p>Скрипты распространяются и выполняются, как простой текст. Им не нужна специальная подготовка или компиляция для запуска.</p>
+    </section>
+    <section id="connection">
+        <h2>Как добавить JavaScript в HTML?</h2>
+        <p>Есть два основных способа подключения JS в HTML:</p>
+        <ul>
+            <li>Вставка кода внутри парного тега &lt;script&gt;</li>
+            <li>Подключение внешних файлов</li>
+        </ul>
+        
+    </section>
+
+    <section>
+        <h2>Задачи на JavaScript</h2>
+        <button onclick="task1()">Создать массив</button>
+        <button onclick="task2()">Вывести и изменить элемент массива</button>
+        <button onclick="task3()">Получить длину массива</button>
+        <button onclick="task4()">Перебрать массив</button>
+        <button onclick="task5()">Объединить массивы</button>
+        <button onclick="task6()">Удалить последний элемент</button>
+        <button onclick="task7()">Удалить последний элемент еще раз</button>
+        <button onclick="task8()">Добавить элемент в начало</button>
+        <button onclick="task9()">Получить сегодняшнюю дату</button>
+        <button onclick="task10()">Форматировать дату</button>
+        <button onclick="task11()">Умножить случайные числа</button>
+    </section>
+    <section>
+        <h2>Тест по JavaScript</h2>
+        <button onclick="startQuiz()">Начать тест</button>
+    </section>
+    <div id="overlay" class="overlay" onclick="hideOverlay()">
+        <div id="overlayContent"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
